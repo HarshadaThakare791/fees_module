@@ -1,0 +1,144 @@
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+  height: 70px;
+  width: 100%;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 20px;
+}
+
+/* =========================================
+   LEFT SIDE
+========================================= */
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* SEARCH */
+.search-input {
+  width: 350px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: 1px solid #d1d5db;
+  background: #f9fafb;
+  outline: none;
+}
+
+.search-input:focus {
+  border-color: #16a34a;
+}
+
+/* DROPDOWN */
+.campus-select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  cursor: pointer;
+}
+
+/* =========================================
+   RIGHT SIDE (IMPORTANT FIX)
+========================================= */
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  flex-direction: row;     /* 🔥 FORCE HORIZONTAL */
+  flex-wrap: nowrap;       /* 🔥 PREVENT GOING DOWN */
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+
+  white-space: nowrap;     /* 🔥 PREVENT BREAK */
+}
+
+/* PRIMARY BUTTON */
+.primary-btn {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.primary-btn:hover {
+  background: #e5e7eb;
+}
+
+/* SECONDARY BUTTON */
+.secondary-btn {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.secondary-btn:hover {
+  background: #e5e7eb;
+}
+
+/* =========================================
+   ICON BUTTON
+========================================= */
+
+.icon-btn {
+  position: relative;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: none;
+  background: #f3f4f6;
+  cursor: pointer;
+}
+
+.icon-btn:hover {
+  background: #e5e7eb;
+}
+
+/* BADGE */
+.badge {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background: red;
+  color: white;
+  font-size: 10px;
+  padding: 2px 5px;
+  border-radius: 50%;
+}
+
+/* =========================================
+   PROFILE
+========================================= */
+
+.profile {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #16a34a;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+}

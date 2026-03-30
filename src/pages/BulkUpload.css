@@ -1,0 +1,337 @@
+.bulk-upload-page {
+  background: #e7f3ed;
+  min-height: calc(100vh - 70px);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Back to Dashboard Button */
+.bulk-upload-header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  background: transparent;
+  color: #059669;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.back-button:hover {
+  background: rgba(5, 150, 105, 0.1);
+  color: #047857;
+}
+
+.back-button svg {
+  flex-shrink: 0;
+}
+
+/* Page Header */
+.bulk-upload-page-header {
+  background: #d1fae5;
+  padding: 32px 28px;
+  border-radius: 12px;
+  border: 1px solid #a7f3d0;
+}
+
+.bulk-upload-title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 800;
+  color: #111111;
+  letter-spacing: -0.5px;
+}
+
+.bulk-upload-subtitle {
+  margin: 12px 0 0 0;
+  font-size: 16px;
+  color: #059669;
+  font-weight: 500;
+}
+
+/* Upload Cards Section */
+.bulk-upload-cards-section {
+  width: 100%;
+}
+
+.bulk-upload-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 12px;
+}
+
+.bulk-upload-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.bulk-upload-card:hover {
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.12);
+  transform: translateY(-2px);
+}
+
+.card-icon-box {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  margin: 0 0 12px 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #111111;
+  letter-spacing: -0.3px;
+}
+
+.card-description {
+  margin: 0 0 18px 0;
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.card-features {
+  list-style: none;
+  margin: 0 0 24px 0;
+  padding: 0;
+  flex: 1;
+}
+
+.card-features li {
+  font-size: 13px;
+  color: #374151;
+  padding: 8px 0;
+  padding-left: 0;
+  position: relative;
+  line-height: 1.5;
+}
+
+.card-features li:before {
+  content: '•';
+  color: #059669;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: 0;
+  margin-right: 8px;
+}
+
+.card-button {
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  color: #374151;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  align-self: flex-start;
+}
+
+.card-button:hover {
+  background: #f9fafb;
+  border-color: #9ca3af;
+  color: #111111;
+}
+
+/* Recent Uploads Section */
+.bulk-upload-recent-section {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
+}
+
+.recent-uploads-header {
+  margin-bottom: 28px;
+}
+
+.recent-uploads-title {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #111111;
+  letter-spacing: -0.3px;
+}
+
+.recent-uploads-subtitle {
+  margin: 0;
+  font-size: 14px;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.recent-uploads-table-wrap {
+  overflow-x: auto;
+}
+
+.recent-uploads-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+.recent-uploads-table thead {
+  background: #fafafa;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.recent-uploads-table th {
+  padding: 14px 12px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 700;
+  color: #111111;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.recent-uploads-table td {
+  padding: 16px 12px;
+  border-bottom: 1px solid #f3f4f6;
+  font-size: 14px;
+  color: #374151;
+}
+
+.upload-row {
+  transition: background-color 0.2s ease;
+}
+
+.upload-row:hover {
+  background: #fafafa;
+}
+
+.file-name-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.file-icon {
+  color: #059669;
+  flex-shrink: 0;
+}
+
+/* Status Badges */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.status-icon {
+  flex-shrink: 0;
+}
+
+.status-success {
+  background: #16a34a;
+  color: #ffffff;
+}
+
+.status-processing {
+  background: #f59e0b;
+  color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .bulk-upload-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bulk-upload-page {
+    padding: 16px;
+    gap: 20px;
+  }
+
+  .bulk-upload-page-header {
+    padding: 24px 20px;
+  }
+
+  .bulk-upload-title {
+    font-size: 24px;
+  }
+
+  .bulk-upload-subtitle {
+    font-size: 14px;
+  }
+
+  .bulk-upload-card {
+    padding: 20px;
+  }
+
+  .card-title {
+    font-size: 16px;
+  }
+
+  .card-icon-box {
+    width: 48px;
+    height: 48px;
+  }
+
+  .bulk-upload-recent-section {
+    padding: 20px;
+  }
+
+  .recent-uploads-table th,
+  .recent-uploads-table td {
+    padding: 12px 8px;
+    font-size: 12px;
+  }
+
+  .recent-uploads-title {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bulk-upload-page {
+    padding: 12px;
+    gap: 16px;
+  }
+
+  .bulk-upload-card {
+    padding: 16px;
+  }
+
+  .card-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .back-button {
+    font-size: 14px;
+  }
+}
